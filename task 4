@@ -1,0 +1,58 @@
+Conversation opened. 1 read message.
+
+Skip to content
+Using Beaconhouse National University Mail with screen readers
+A system problem might not let you make or get calls here
+Retry
+
+1 of 288
+labwork
+Inbox
+
+KHAWAR ARSLAN <f2025-0981@bnu.edu.pk>
+Dec 19, 2025, 1:57 AM (1 day ago)
+to me
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include<vector>
+using namespace std;
+struct k
+{
+    string name;
+    string roll;
+    string sub;
+    int age;
+};
+void print(k a){
+   cout<<"information"<<endl;
+      cout<<"name: "<<a.name<<endl;
+      cout<<"roll no: "<<a.roll<<endl;
+      cout<<"subject: "<<a.sub<<endl;
+      cout<<"age: "<<a.age<<endl;
+       cout<<endl;
+}
+k inputt(){
+    k a;
+   cout<<"enter name :";
+   cin>>a.name;
+   cout<<"enter roll no :";
+    cin>>a.roll;
+     cout<<"enter subject :";
+      cin>>a.sub;
+      cout<<"enter age :";
+       cin>>a.age;
+       return a;
+}
+
+int main() {
+    vector<k> vec;
+    for(int i=0; i<3;i++){
+        k a= inputt();
+        vec.push_back(a);
+    }
+    for(k a:vec){
+        print(a);
+    }
+    return 0;
+}
